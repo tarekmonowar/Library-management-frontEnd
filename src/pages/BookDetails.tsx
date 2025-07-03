@@ -31,16 +31,16 @@ const BookDetails = () => {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-gray-50 py-8">
+      <div className="min-h-screen bg-gray-900 py-8">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="animate-pulse">
-            <div className="h-8 bg-gray-200 rounded w-1/4 mb-8"></div>
-            <div className="bg-white rounded-lg shadow p-6">
-              <div className="h-8 bg-gray-200 rounded w-3/4 mb-4"></div>
-              <div className="h-4 bg-gray-200 rounded w-1/2 mb-8"></div>
+            <div className="h-8 bg-gray-700 rounded w-1/4 mb-8"></div>
+            <div className="bg-gray-900 rounded-lg shadow p-6">
+              <div className="h-8 bg-gray-700 rounded w-3/4 mb-4"></div>
+              <div className="h-4 bg-gray-700 rounded w-1/2 mb-8"></div>
               <div className="space-y-4">
                 {[...Array(6)].map((_, i) => (
-                  <div key={i} className="h-4 bg-gray-200 rounded w-full"></div>
+                  <div key={i} className="h-4 bg-gray-700 rounded w-full"></div>
                 ))}
               </div>
             </div>

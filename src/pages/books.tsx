@@ -179,25 +179,19 @@ const Books = () => {
                   </TableCell>
                   <TableCell className="text-center">
                     <div className="flex items-center justify-center space-x-2">
-                      <Button
-                        size="sm"
-                        variant="outline"
-                        className="bg-transparent border-gray-600 text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer"
+                      <Link
+                        to={`/books/${book._id}`}
+                        className="inline-flex items-center justify-center rounded-md border border-gray-600 bg-transparent px-3 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer"
                       >
-                        <Link to={`/books/${book._id}`}>
-                          <Eye className="h-4 w-4" />
-                        </Link>
-                      </Button>
+                        <Eye className="h-4 w-4" />
+                      </Link>
 
-                      <Button
-                        size="sm"
-                        variant="outline"
-                        className="bg-transparent border-gray-600 text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer"
+                      <Link
+                        to={`/edit-book/${book._id}`}
+                        className="inline-flex items-center justify-center rounded-md border border-gray-600 bg-transparent px-3 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer"
                       >
-                        <Link to={`/edit-book/${book._id}`}>
-                          <Edit className="h-4 w-4" />
-                        </Link>
-                      </Button>
+                        <Edit className="h-4 w-4" />
+                      </Link>
 
                       <Button
                         size="sm"

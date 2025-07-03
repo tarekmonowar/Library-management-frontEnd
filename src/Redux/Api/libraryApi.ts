@@ -103,27 +103,10 @@ export const libraryApi = createApi({
     //update book details endpoints
 
     updateBook: builder.mutation<MessageResponse, UpdateBookRequest>({
-      query: ({
-        title,
-        author,
-        genre,
-        isbn,
-        description,
-        copies,
-        available,
-        bookId,
-      }) => ({
+      query: ({ bookId, ...bookData }) => ({
         url: `/books/${bookId}`,
         method: "PUT",
-        body: {
-          title,
-          author,
-          genre,
-          isbn,
-          description,
-          copies,
-          available,
-        },
+        body: bookData,
       }),
       invalidatesTags: ["Books"],
     }),

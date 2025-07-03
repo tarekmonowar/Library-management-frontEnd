@@ -17,7 +17,7 @@ and borrowing records through a clean, responsive interface.
 
 ## Live FronEnd Link
 
-https://assignment-3-three-lilac.vercel.app
+https://library-management-front-end-rust.vercel.app
 
 ---
 
